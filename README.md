@@ -23,8 +23,10 @@ QuizApp/
 
 - **Dynamic quiz interface** rendered from JavaScript data  
 - **Multiple-choice questions**, with single correct answer per question  
-- **Immediate feedback** after each answer (correct/incorrect indicator)  
+- **Immediate feedback** after each answer (correct/incorrect indicator)
+- **Timer per question** to create a time-bound challenge  
 - **Score tracking** throughout the quiz  
+- **End-of-quiz summary**, showing final score and feedback
 - **Clean, responsive design** for a smooth user experience across devices
 
 ---
@@ -47,8 +49,6 @@ QuizApp/
 
 ## Next Steps / Future Enhancements
 
-* Add **timer per question** to create a time-bound challenge
-* Provide **end-of-quiz summary**, showing final score and feedback
 * Expand question set, possibly with **randomized questions**
 * Add **support for multiple quizzes** (e.g., categories or topics)
 * Enable **user input** to add custom questions or store high scores
