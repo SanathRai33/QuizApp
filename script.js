@@ -22,6 +22,10 @@ let timeLineInterval = null;
 let progressBarInterval = null;
 const TickIcon = `<div class="icon tick"><i class="fa-solid fa-check"></i></div>`;
 const CrossIcon = `<div class="icon cross"><i class="fa-solid fa-xmark"></i></div>`;
+
+	const random = Math.floor(Math.random()*2)
+	console.log(random)
+
 startBtn.addEventListener('click', () => {
 	//we have to inject a class name to info box
 	infoBox.classList.add('activeInfoBox');
@@ -80,11 +84,14 @@ replayQuiz.addEventListener('click', () => {
 
 //function to show/render questions
 const showQuestion = (index) => {
+	console.log(questions[random])
+	console.log(questions)
+
 	questionText.innerText =
-		'' + questions?.[index].numb + '. ' + questions?.[index].question;
+		'' + questions[random]?.[index].numb + '. ' + questions[random]?.[index].question;
 
 	for (let i = 0; i < allOptions?.length; i++) {
-		allOptions[i].innerText = questions?.[index].options?.[i];
+		allOptions[i].innerText = questions[random]?.[index].options?.[i];
 		allOptions[i].classList.remove('correct');
 		allOptions[i].classList.remove('incorrect');
 		allOptions[i].classList.remove('disabled');
@@ -115,7 +122,7 @@ const handleTiming = (time) => {
 			timeLineTitle.innerText = 'Time Off';
 			clearInterval(timeLineInterval);
 			nextBtn.classList.add('active');
-			const correctAnswer = questions[currentQustionIndex].answer;
+			const correctAnswer = questions[random][currentQustionIndex].answer;
 			for (let i = 0; i < allOptions?.length; i++) {
 				allOptions[i].classList.add('disabled');
 
@@ -147,7 +154,7 @@ const optionClickHanlder = (e) => {
 	clearInterval(timeLineInterval);
 	nextBtn.classList.add('active');
 	const userAnswer = e.target.innerText;
-	const correctAnswer = questions[currentQustionIndex].answer;
+	const correctAnswer = questions[random][currentQustionIndex].answer;
 
 	if (userAnswer === correctAnswer) {
 		userScore++;
@@ -184,5 +191,5 @@ const handleShowResults = () => {
 	<span>and nice 😎, You got
 					<p>${userScore}</p>
 					out of
-					<p>${questions?.length}</p></span>`;
+					<p>${questions[random]?.length}</p></span>`;
 };
