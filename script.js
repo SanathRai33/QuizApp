@@ -23,7 +23,7 @@ let progressBarInterval = null;
 const TickIcon = `<div class="icon tick"><i class="fa-solid fa-check"></i></div>`;
 const CrossIcon = `<div class="icon cross"><i class="fa-solid fa-xmark"></i></div>`;
 
-	const random = Math.floor(Math.random()*2)
+	const random = Math.floor(Math.random()*5)
 	console.log(random)
 
 startBtn.addEventListener('click', () => {
