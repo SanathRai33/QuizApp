@@ -31,6 +31,13 @@ QuizApp/
 
 ---
 
+## 📸 Preview
+<img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/8e704528-1c11-44b6-9603-be77f5addf17" />
+
+**[Live demo](https://sanathrai33.github.io/QuizApp/)** 
+
+---
+
 ##  How to Run Locally
 
 1. Clone the repository:  
@@ -80,7 +87,6 @@ This project is licensed under the **MIT License**—feel free to use, modify, a
 
 * GitHub: [SanathRai33](https://github.com/SanathRai33)
 * Email: [sanathrai03@gmail.com](mailto:sanathrai03@gmail.com)
-
-```
+* Live Demo: [Click here](
 
 ---
