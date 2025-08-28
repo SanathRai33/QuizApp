@@ -87,6 +87,6 @@ This project is licensed under the **MIT License**—feel free to use, modify, a
 
 * GitHub: [SanathRai33](https://github.com/SanathRai33)
 * Email: [sanathrai03@gmail.com](mailto:sanathrai03@gmail.com)
-* Live Demo: [Click here](
+* Live Demo: [Click here](https://sanathrai33.github.io/QuizApp/)
 
 ---
